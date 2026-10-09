@@ -1,0 +1,74 @@
+magic
+tech sky130A
+timestamp 1791468133
+<< polycont >>
+rect 690 25 710 45
+rect 755 25 775 45
+rect 65 -25 85 -5
+rect 130 -25 150 -5
+rect 65 -375 85 -355
+rect 130 -375 150 -355
+<< locali >>
+rect -205 85 -125 105
+rect 420 85 495 105
+rect -280 -355 -260 15
+rect -145 -5 -125 85
+rect 475 -5 495 85
+rect 690 -5 710 15
+rect -145 -25 55 -5
+rect 475 -25 710 -5
+rect 755 -85 775 15
+rect 420 -105 775 -85
+rect -280 -375 55 -355
+<< metal1 >>
+rect -400 195 -380 275
+rect -205 195 -35 275
+rect 420 195 590 275
+rect 1045 195 1135 275
+rect 1015 135 1055 175
+rect -475 75 -380 115
+rect -205 75 -35 115
+rect 420 75 590 115
+rect -475 -235 -430 75
+rect -295 10 -245 60
+rect 675 10 725 60
+rect 740 10 790 60
+rect 955 10 1005 60
+rect 50 -40 100 10
+rect 115 -40 165 10
+rect 1085 -75 1135 195
+rect 420 -155 1135 -75
+rect 420 -160 440 -155
+rect -475 -325 -35 -235
+rect 50 -390 100 -340
+rect 115 -390 165 -340
+use and  and_0
+timestamp 1791467162
+transform 1 0 20 0 1 20
+box -75 -60 420 280
+use and  and_1
+timestamp 1791467162
+transform 1 0 20 0 1 -330
+box -75 -60 420 280
+use inverter1  inverter1_0
+timestamp 1791466470
+transform 1 0 -260 0 1 90
+box -140 -80 75 210
+use or  or_0
+timestamp 1791468133
+transform 1 0 620 0 1 40
+box -50 -30 445 340
+<< labels >>
+rlabel metal1 115 -365 115 -365 7 D1
+port 2 w
+rlabel metal1 115 -15 115 -15 7 D0
+port 3 w
+rlabel metal1 1055 155 1055 155 3 Y
+port 4 e
+rlabel metal1 50 -365 50 -365 7 S
+port 5 w
+rlabel metal1 -400 240 -400 240 7 VDD
+port 1 w
+rlabel metal1 -400 95 -400 95 7 GND
+port 6 w
+<< end >>

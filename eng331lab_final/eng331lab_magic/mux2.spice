@@ -1,0 +1,39 @@
+* SPICE3 file created from mux2.ext - technology: sky130A
+
+.subckt inverter1 GND Y A w_n140_80#
+X0 Y A GND GND sky130_fd_pr__nfet_01v8 ad=0.225 pd=1.9 as=0.225 ps=1.9 w=0.5 l=0.15
+X1 Y A w_n140_80# w_n140_80# sky130_fd_pr__pfet_01v8 ad=0.36 pd=2.5 as=0.36 ps=2.5 w=0.8 l=0.15
+.ends
+
+.subckt nor VDD GND A B Y
+X0 a_5_80# a_n35_n100# VDD VDD sky130_fd_pr__pfet_01v8 ad=0.4 pd=2.1 as=0.72 ps=4.1 w=1.6 l=0.15
+X1 Y a_n35_n100# GND GND sky130_fd_pr__nfet_01v8 ad=0.125 pd=1 as=0.225 ps=1.9 w=0.5 l=0.15
+X2 GND a_30_n100# Y GND sky130_fd_pr__nfet_01v8 ad=0.225 pd=1.9 as=0.125 ps=1 w=0.5 l=0.15
+X3 Y a_30_n100# a_5_80# VDD sky130_fd_pr__pfet_01v8 ad=0.72 pd=4.1 as=0.4 ps=2.1 w=1.6 l=0.15
+.ends
+
+.subckt or inverter1_0/Y nor_0/VDD nor_0/B nor_0/A SUB
+Xinverter1_0 SUB inverter1_0/Y nor_0/Y nor_0/VDD inverter1
+Xnor_0 nor_0/VDD SUB nor_0/A nor_0/B nor_0/Y nor
+.ends
+
+.subckt nand VDD GND A B Y
+X0 Y a_n40_n115# VDD VDD sky130_fd_pr__pfet_01v8 ad=0.2 pd=1.3 as=0.36 ps=2.5 w=0.8 l=0.15
+X1 Y a_25_n115# a_0_n60# GND sky130_fd_pr__nfet_01v8 ad=0.45 pd=2.9 as=0.25 ps=1.5 w=1 l=0.15
+X2 a_0_n60# a_n40_n115# GND GND sky130_fd_pr__nfet_01v8 ad=0.25 pd=1.5 as=0.45 ps=2.9 w=1 l=0.15
+X3 VDD a_25_n115# Y VDD sky130_fd_pr__pfet_01v8 ad=0.36 pd=2.5 as=0.2 ps=1.3 w=0.8 l=0.15
+.ends
+
+.subckt and inverter1_0/Y nand_0/VDD nand_0/B nand_0/A SUB
+Xinverter1_0 SUB inverter1_0/Y nand_0/Y nand_0/VDD inverter1
+Xnand_0 nand_0/VDD SUB nand_0/A nand_0/B nand_0/Y nand
+.ends
+
+*.subckt mux2 S D1 D0 Y
+Xinverter1_0 SUB inverter1_0/Y S or_0/nor_0/VDD inverter1
+Xor_0 Y or_0/nor_0/VDD or_0/nor_0/B or_0/nor_0/A SUB or
+Xand_0 or_0/nor_0/A or_0/nor_0/VDD D0 inverter1_0/Y SUB and
+Xand_1 or_0/nor_0/B or_0/nor_0/VDD D1 S SUB and
+C0 or_0/nor_0/VDD SUB 5.02136f
+*.ends
+

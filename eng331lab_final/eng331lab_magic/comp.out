@@ -1,0 +1,36 @@
+
+Circuit 1 cell sky130_fd_pr__pfet_01v8 and Circuit 2 cell sky130_fd_pr__pfet_01v8 are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
+Equate elements:  no current cell.
+Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
+Flattening unmatched subcell and2 in circuit mux2_xschem.spice (0)(2 instances)
+Flattening unmatched subcell nand2 in circuit mux2_xschem.spice (0)(2 instances)
+Flattening unmatched subcell inv in circuit mux2_xschem.spice (0)(3 instances)
+Flattening unmatched subcell or2 in circuit mux2_xschem.spice (0)(1 instance)
+Flattening unmatched subcell nor2 in circuit mux2_xschem.spice (0)(1 instance)
+Flattening unmatched subcell inv in circuit mux2_xschem.spice (0)(1 instance)
+Flattening unmatched subcell inverter1 in circuit mux.spice (1)(1 instance)
+Flattening unmatched subcell or in circuit mux.spice (1)(1 instance)
+Flattening unmatched subcell inverter1 in circuit mux.spice (1)(1 instance)
+Flattening unmatched subcell nor in circuit mux.spice (1)(1 instance)
+Flattening unmatched subcell and in circuit mux.spice (1)(2 instances)
+Flattening unmatched subcell inverter1 in circuit mux.spice (1)(2 instances)
+Flattening unmatched subcell nand in circuit mux.spice (1)(2 instances)
+
+Subcircuit summary:
+Circuit 1: mux2_xschem.spice               |Circuit 2: mux.spice                       
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (10)               |sky130_fd_pr__pfet_01v8 (10)               
+sky130_fd_pr__nfet_01v8 (10)               |sky130_fd_pr__nfet_01v8 (10)               
+Number of devices: 20                      |Number of devices: 20                      
+Number of nets: 15                         |Number of nets: 15                         
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+Cells have no pins;  pin matching not needed.
+Device classes mux2_xschem.spice and mux.spice are equivalent.
+
+Final result: Circuits match uniquely.
+.

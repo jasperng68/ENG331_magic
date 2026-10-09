@@ -1,0 +1,9 @@
+* SPICE3 file created from nand.ext - technology: sky130A
+
+*.subckt nand VDD GND A B Y
+X0 Y a_n40_n115# VDD VDD sky130_fd_pr__pfet_01v8 ad=0.2 pd=1.3 as=0.36 ps=2.5 w=0.8 l=0.15
+X1 Y a_25_n115# a_0_n60# GND sky130_fd_pr__nfet_01v8 ad=0.45 pd=2.9 as=0.25 ps=1.5 w=1 l=0.15
+X2 a_0_n60# a_n40_n115# GND GND sky130_fd_pr__nfet_01v8 ad=0.25 pd=1.5 as=0.45 ps=2.9 w=1 l=0.15
+X3 VDD a_25_n115# Y VDD sky130_fd_pr__pfet_01v8 ad=0.36 pd=2.5 as=0.2 ps=1.3 w=0.8 l=0.15
+*.ends
+

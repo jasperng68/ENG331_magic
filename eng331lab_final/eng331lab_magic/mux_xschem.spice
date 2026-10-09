@@ -1,0 +1,87 @@
+** sch_path: /home/student/xschem_sky130/eng331lab_xschem/mux2.sch
+**.subckt mux2 D0 Y D1 S
+*.ipin D0
+*.ipin D1
+*.ipin S
+*.opin Y
+x1 s_bar out1 D0 and2
+x2 S out2 D1 and2
+x3 out1 Y out2 or2
+x4 s_bar S inv
+**.ends
+
+* expanding   symbol:  eng331lab_xschem/and2.sym # of pins=3
+** sym_path: /home/student/xschem_sky130/eng331lab_xschem/and2.sym
+** sch_path: /home/student/xschem_sky130/eng331lab_xschem/and2.sch
+.subckt and2 A Y B
+*.ipin A
+*.ipin B
+*.opin Y
+x1 A Y_bar B nand2
+x2 Y Y_bar inv
+.ends
+
+
+* expanding   symbol:  eng331lab_xschem/or2.sym # of pins=3
+** sym_path: /home/student/xschem_sky130/eng331lab_xschem/or2.sym
+** sch_path: /home/student/xschem_sky130/eng331lab_xschem/or2.sch
+.subckt or2 A Y B
+*.ipin A
+*.ipin B
+*.opin Y
+x1 A B Y_bar nor2
+x2 Y Y_bar inv
+.ends
+
+
+* expanding   symbol:  eng331lab_xschem/inv.sym # of pins=2
+** sym_path: /home/student/xschem_sky130/eng331lab_xschem/inv.sym
+** sch_path: /home/student/xschem_sky130/eng331lab_xschem/inv.sch
+.subckt inv Y A
+*.ipin A
+*.opin Y
+XM1 Y A VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=0.8 nf=1 ad=0.232 as=0.232 pd=2.18 ps=2.18 nrd=0.3625 nrs=0.3625 sa=0 sb=0 sd=0
++ mult=1 m=1
+XM2 Y A GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=0.5 nf=1 ad=0.145 as=0.145 pd=1.58 ps=1.58 nrd=0.58 nrs=0.58 sa=0 sb=0 sd=0
++ mult=1 m=1
+.ends
+
+
+* expanding   symbol:  eng331lab_xschem/nand2.sym # of pins=3
+** sym_path: /home/student/xschem_sky130/eng331lab_xschem/nand2.sym
+** sch_path: /home/student/xschem_sky130/eng331lab_xschem/nand2.sch
+.subckt nand2 A Y B
+*.ipin A
+*.ipin B
+*.opin Y
+XM1 Y A VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=0.8 nf=1 ad=0.232 as=0.232 pd=2.18 ps=2.18 nrd=0.3625 nrs=0.3625 sa=0 sb=0 sd=0
++ mult=1 m=1
+XM2 Y B VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=0.8 nf=1 ad=0.232 as=0.232 pd=2.18 ps=2.18 nrd=0.3625 nrs=0.3625 sa=0 sb=0 sd=0
++ mult=1 m=1
+XM3 Y A net1 GND sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad=0.29 as=0.29 pd=2.58 ps=2.58 nrd=0.29 nrs=0.29 sa=0 sb=0 sd=0 mult=1
++ m=1
+XM4 net1 B GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 ad=0.29 as=0.29 pd=2.58 ps=2.58 nrd=0.29 nrs=0.29 sa=0 sb=0 sd=0 mult=1
++ m=1
+.ends
+
+
+* expanding   symbol:  eng331lab_xschem/nor2.sym # of pins=3
+** sym_path: /home/student/xschem_sky130/eng331lab_xschem/nor2.sym
+** sch_path: /home/student/xschem_sky130/eng331lab_xschem/nor2.sch
+.subckt nor2 A B Y
+*.ipin A
+*.ipin B
+*.opin Y
+XM1 net1 A VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=1.6 nf=1 ad=0.464 as=0.464 pd=3.78 ps=3.78 nrd=0.18125 nrs=0.18125 sa=0 sb=0
++ sd=0 mult=1 m=1
+XM2 Y B net1 VDD sky130_fd_pr__pfet_01v8 L=0.15 W=1.6 nf=1 ad=0.464 as=0.464 pd=3.78 ps=3.78 nrd=0.18125 nrs=0.18125 sa=0 sb=0
++ sd=0 mult=1 m=1
+XM3 Y A GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=0.5 nf=1 ad=0.145 as=0.145 pd=1.58 ps=1.58 nrd=0.58 nrs=0.58 sa=0 sb=0 sd=0
++ mult=1 m=1
+XM4 Y B GND GND sky130_fd_pr__nfet_01v8 L=0.15 W=0.5 nf=1 ad=0.145 as=0.145 pd=1.58 ps=1.58 nrd=0.58 nrs=0.58 sa=0 sb=0 sd=0
++ mult=1 m=1
+.ends
+
+.GLOBAL VDD
+.GLOBAL GND
+.end

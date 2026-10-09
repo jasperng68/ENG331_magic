@@ -1,0 +1,33 @@
+magic
+tech sky130A
+timestamp 1791468133
+<< locali >>
+rect 210 105 250 125
+rect 230 5 250 105
+rect 230 -15 340 5
+<< metal1 >>
+rect -50 155 -30 315
+rect 395 95 445 135
+rect -50 35 40 75
+rect 55 -30 105 20
+rect 120 -30 170 20
+use inverter1  inverter1_0
+timestamp 1791466470
+transform 1 0 370 0 1 50
+box -140 -80 75 210
+use nor  nor_0
+timestamp 1791035449
+transform 1 0 95 0 1 75
+box -145 -105 135 265
+<< labels >>
+rlabel metal1 -50 55 -50 55 7 GND
+port 2 w
+rlabel metal1 55 -5 55 -5 7 A
+port 3 w
+rlabel metal1 120 -5 120 -5 7 B
+port 4 w
+rlabel metal1 -50 235 -50 235 7 VDD
+port 1 w
+rlabel metal1 445 115 445 115 3 Y
+port 5 e
+<< end >>

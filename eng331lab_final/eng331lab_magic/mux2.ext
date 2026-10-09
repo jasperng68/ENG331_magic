@@ -1,0 +1,193 @@
+timestamp 1791035274
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 1e+06
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use or or_0 1 0 1090 0 1 90
+use inverter1 inverter1_0 1 0 -284 0 1 140
+use and and_1 1 0 490 0 1 70
+use and and_0 1 0 -5 0 1 70
+port "D1" 2 610 10 610 10 m1
+port "S" 1 545 10 545 10 m1
+port "D0" 3 115 10 115 10 m1
+port "Y" 4 1535 205 1535 205 m1
+node "D1" 0 65.9852 610 10 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2500 200 0 0 0 0 0 0 0 0 0 0
+node "S" 0 59.7544 545 10 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2500 200 0 0 0 0 0 0 0 0 0 0
+node "D0" 0 76.5541 115 10 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2500 200 0 0 0 0 0 0 0 0 0 0
+node "m1_n320_60#" 0 83.4345 -320 60 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2500 200 0 0 0 0 0 0 0 0 0 0
+node "m1_890_125#" 1 152.747 890 125 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8000 480 0 0 0 0 0 0 0 0 0 0
+node "m1_n230_125#" 1 115.722 -230 125 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6800 420 0 0 0 0 0 0 0 0 0 0
+node "m1_n425_125#" 0 36.0088 -425 125 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 800 120 0 0 0 0 0 0 0 0 0 0
+node "Y" 0 78.0212 1535 205 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2000 180 0 0 0 0 0 0 0 0 0 0
+node "m1_890_245#" 0 175.479 890 245 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 13600 500 0 0 0 0 0 0 0 0 0 0
+node "m1_n230_245#" 0 168.83 -230 245 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 13600 500 0 0 0 0 0 0 0 0 0 0
+node "m1_n425_245#" 1 61.8829 -425 245 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1600 200 0 0 0 0 0 0 0 0 0 0
+node "li_870_5#" 330 396.009 870 5 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 10300 1070 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_n305_n45#" 634 794.254 -305 -45 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 19800 2020 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_n230_135#" 237 261.912 -230 135 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 7400 780 0 0 0 0 0 0 0 0 0 0 0 0
+node "li_365_325#" 701 899.596 365 325 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 21900 2230 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "SUB" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "S" "D0" 5.4321
+cap "D1" "li_365_325#" 0.408001
+cap "li_365_325#" "m1_890_125#" 53.8159
+cap "li_n230_135#" "S" 0.0512653
+cap "S" "li_n305_n45#" 14.8754
+cap "li_365_325#" "Y" 0.147406
+cap "D1" "li_n230_135#" 0.0411703
+cap "S" "li_870_5#" 0.211028
+cap "D1" "li_n305_n45#" 0.51836
+cap "m1_890_245#" "m1_890_125#" 71.2381
+cap "m1_n230_125#" "m1_n230_245#" 71.2381
+cap "m1_890_245#" "li_365_325#" 92.5373
+cap "D1" "li_870_5#" 1.21009
+cap "li_n230_135#" "m1_n320_60#" 2.52333
+cap "li_n305_n45#" "li_365_325#" 12.5499
+cap "li_n305_n45#" "m1_n320_60#" 15.3032
+cap "m1_n230_125#" "m1_n425_125#" 8.8
+cap "m1_n230_125#" "li_n230_135#" 51.7627
+cap "m1_n230_125#" "li_n305_n45#" 2.27978
+cap "m1_890_125#" "li_870_5#" 7.78626
+cap "li_n230_135#" "D0" 4.80198
+cap "li_n305_n45#" "D0" 9.0606
+cap "li_365_325#" "li_870_5#" 74.3179
+cap "li_n230_135#" "m1_n230_245#" 4.74768
+cap "m1_n425_245#" "m1_n230_245#" 17.6
+cap "D0" "li_870_5#" 0.0380893
+cap "D1" "S" 55
+cap "li_n230_135#" "m1_n425_125#" 0.138593
+cap "li_n230_135#" "li_n305_n45#" 96.3876
+cap "m1_n425_245#" "m1_n425_125#" 8.38095
+cap "m1_890_245#" "li_870_5#" 1.42278
+cap "S" "li_365_325#" 0.399888
+cap "li_n305_n45#" "li_870_5#" 0.775076
+cap "or_0/nor_0/GND" "inverter1_0/Y" 73.791
+cap "inverter1_0/A" "and_0/nand_0/a_25_n115#" 1.35389
+cap "and_0/nand_0/Y" "inverter1_0/A" 33.3419
+cap "inverter1_0/Y" "inverter1_0/A" 40.4382
+cap "and_0/nand_0/B" "inverter1_0/A" 16.8878
+cap "or_0/nor_0/VDD" "and_0/nand_0/Y" 0.245996
+cap "inverter1_0/Y" "and_1/nand_0/B" -0.0369936
+cap "or_0/nor_0/VDD" "inverter1_0/Y" 38.4539
+cap "inverter1_0/Y" "and_0/nand_0/a_0_n60#" 0.147589
+cap "inverter1_0/A" "and_0/nand_0/a_n40_n115#" 6.05865
+cap "or_0/nor_0/VDD" "and_0/nand_0/a_n40_n115#" 0.483651
+cap "or_0/nor_0/GND" "inverter1_0/A" 16.8086
+cap "inverter1_0/Y" "and_0/nand_0/a_25_n115#" 0.189022
+cap "inverter1_0/Y" "and_0/nand_0/Y" 10.8966
+cap "or_0/nor_0/VDD" "or_0/nor_0/GND" -25.1429
+cap "inverter1_0/Y" "and_0/nand_0/B" -4.76819
+cap "or_0/nor_0/VDD" "inverter1_0/A" 1.69722
+cap "and_1/nand_0/a_n40_n115#" "and_0/nand_0/a_25_n115#" 1.01328
+cap "and_0/nand_0/a_0_n60#" "inverter1_0/A" 2.36671
+cap "inverter1_0/Y" "and_0/nand_0/a_n40_n115#" 4.92419
+cap "or_0/nor_0/GND" "and_0/nand_0/Y" 0.993184
+cap "inverter1_0/Y" "and_1/nand_0/a_25_n115#" 0.00438537
+cap "inverter1_0/Y" "and_1/nand_0/a_n40_n115#" 0.00522355
+cap "or_0/nor_0/B" "and_0/nand_0/a_25_n115#" 0.0047451
+cap "and_1/nand_0/B" "or_0/nor_0/B" 3.76823
+cap "or_0/nor_0/B" "inverter1_0/Y" 0.000379032
+cap "and_1/nand_0/a_25_n115#" "and_0/nand_0/Y" 0.123068
+cap "or_0/nor_0/A" "or_0/nor_0/B" 41.6885
+cap "and_1/nand_0/Y" "or_0/nor_0/Y" 0.223327
+cap "and_1/nand_0/a_n40_n115#" "or_0/nor_0/VDD" 1.46962
+cap "or_0/nor_0/a_n35_n100#" "and_1/nand_0/Y" 3.231
+cap "and_1/nand_0/B" "inverter1_0/A" -55
+cap "or_0/nor_0/A" "inverter1_0/A" -1.88844
+cap "and_0/nand_0/Y" "or_0/nor_0/GND" 31.3415
+cap "inverter1_0/Y" "inverter1_0/A" 0.0102227
+cap "and_1/nand_0/a_0_n60#" "or_0/nor_0/A" 0.335833
+cap "and_0/nand_0/B" "or_0/nor_0/B" -0.0338572
+cap "or_0/nor_0/A" "or_0/nor_0/VDD" 317.96
+cap "and_1/nand_0/a_25_n115#" "or_0/nor_0/Y" 0.000457068
+cap "or_0/nor_0/A" "and_1/nand_0/Y" 63.4857
+cap "and_1/nand_0/a_n40_n115#" "and_0/nand_0/Y" 7.85199
+cap "or_0/nor_0/B" "or_0/nor_0/a_30_n100#" 0.0788234
+cap "or_0/nor_0/Y" "or_0/nor_0/GND" 0.059657
+cap "and_0/nand_0/B" "inverter1_0/A" 1.2751
+cap "or_0/nor_0/a_n35_n100#" "or_0/nor_0/GND" 0.0298616
+cap "or_0/nor_0/B" "inverter1_0/A" -0.180893
+cap "or_0/nor_0/A" "and_1/nand_0/a_25_n115#" 5.82414
+cap "or_0/nor_0/B" "or_0/nor_0/VDD" 15.9008
+cap "and_0/nand_0/Y" "inverter1_0/Y" 0.328698
+cap "and_1/nand_0/Y" "or_0/nor_0/B" 40.2069
+cap "or_0/nor_0/A" "and_0/nand_0/Y" 1.92115
+cap "or_0/nor_0/A" "or_0/nor_0/GND" 28.0836
+cap "or_0/nor_0/VDD" "inverter1_0/A" 5.07574
+cap "and_1/nand_0/a_n40_n115#" "and_0/nand_0/a_25_n115#" 1.01328
+cap "or_0/nor_0/B" "and_0/nand_0/Y" 0.00825514
+cap "and_1/nand_0/a_25_n115#" "or_0/nor_0/B" 0.379088
+cap "or_0/nor_0/A" "and_1/nand_0/a_n40_n115#" 8.40701
+cap "and_1/nand_0/Y" "or_0/nor_0/VDD" 2.59562
+cap "or_0/inverter1_0/Y" "or_0/nor_0/GND" 0.0079478
+cap "or_0/nor_0/a_30_n100#" "or_0/nor_0/GND" 0.0235068
+cap "or_0/nor_0/B" "or_0/nor_0/GND" 17.0913
+cap "or_0/nor_0/A" "and_0/nand_0/a_n40_n115#" 0.041833
+cap "or_0/nor_0/A" "and_0/nand_0/a_25_n115#" 0.0666462
+cap "and_0/nand_0/Y" "inverter1_0/A" 20.787
+cap "inverter1_0/A" "or_0/nor_0/GND" 19.8013
+cap "and_1/nand_0/B" "or_0/nor_0/A" -0.408001
+cap "and_1/nand_0/a_n40_n115#" "or_0/nor_0/B" 0.0261807
+cap "and_1/nand_0/a_0_n60#" "and_0/nand_0/Y" 0.230214
+cap "and_0/nand_0/B" "and_1/nand_0/a_n40_n115#" 0.0162054
+cap "or_0/nor_0/B" "or_0/nor_0/Y" 2.52004
+cap "and_1/nand_0/Y" "and_0/nand_0/Y" 4.15393
+cap "and_0/nand_0/Y" "or_0/nor_0/VDD" 5.57096
+cap "or_0/nor_0/a_n35_n100#" "or_0/nor_0/B" 0.229768
+cap "or_0/nor_0/VDD" "or_0/nor_0/GND" -8.38095
+cap "and_1/nand_0/a_n40_n115#" "inverter1_0/A" 2.93501
+cap "or_0/nor_0/a_n35_n100#" "or_0/nor_0/A" 5.50378
+cap "or_0/nor_0/a_5_80#" "or_0/nor_0/B" 0.220307
+cap "or_0/nor_0/a_n35_n100#" "or_0/nor_0/B" 1.68831
+cap "and_1/nand_0/Y" "or_0/nor_0/Y" 0.196721
+cap "and_1/nand_0/Y" "or_0/nor_0/a_n35_n100#" 3.25628
+cap "or_0/nor_0/VDD" "or_0/nor_0/B" 0.187193
+cap "or_0/nor_0/VDD" "or_0/nor_0/A" 130.456
+cap "or_0/nor_0/VDD" "and_1/nand_0/a_n40_n115#" 0.0304522
+cap "and_1/nand_0/Y" "or_0/nor_0/VDD" 0.139784
+cap "or_0/nor_0/GND" "or_0/nor_0/VDD" -8.38095
+cap "or_0/inverter1_0/Y" "or_0/nor_0/A" -0.147406
+cap "or_0/nor_0/VDD" "and_1/nand_0/a_25_n115#" 0.0399935
+cap "or_0/nor_0/VDD" "and_0/inverter1_0/A" 0.0149669
+cap "or_0/nor_0/a_30_n100#" "or_0/nor_0/B" 2.93501
+cap "or_0/nor_0/a_30_n100#" "or_0/nor_0/A" 0.2743
+cap "or_0/nor_0/A" "or_0/nor_0/B" 44.2916
+cap "and_1/nand_0/Y" "or_0/nor_0/A" 3.55256
+cap "or_0/nor_0/A" "and_1/nand_0/a_n40_n115#" 0.0185961
+cap "and_1/nand_0/a_25_n115#" "or_0/nor_0/A" 0.0251476
+cap "or_0/nor_0/GND" "or_0/nor_0/A" 56.3018
+cap "or_0/nor_0/GND" "or_0/nor_0/B" 1.78713
+cap "or_0/nor_0/Y" "or_0/nor_0/VDD" 0.0482908
+cap "or_0/nor_0/a_n35_n100#" "or_0/nor_0/VDD" 0.300281
+cap "or_0/nor_0/Y" "or_0/nor_0/B" 7.24552
+cap "or_0/nor_0/Y" "or_0/nor_0/A" 12.1495
+merge "and_0/inverter1_0/GND" "and_0/SUB" -429.03 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -5200 -740 0 0 0 0 0 0 0 0 0 0
+merge "and_0/SUB" "and_0/nand_0/GND"
+merge "and_0/nand_0/GND" "and_1/nand_0/GND"
+merge "and_1/nand_0/GND" "or_0/nor_0/GND"
+merge "or_0/nor_0/GND" "m1_890_125#"
+merge "m1_890_125#" "and_1/SUB"
+merge "and_1/SUB" "inverter1_0/GND"
+merge "inverter1_0/GND" "or_0/SUB"
+merge "or_0/SUB" "SUB"
+merge "SUB" "m1_n230_125#"
+merge "m1_n230_125#" "m1_n425_125#"
+merge "and_1/nand_0/A" "S" -338.455 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -80 -4950 -398 0 0 0 0 0 0 0 0 0 0
+merge "S" "inverter1_0/A"
+merge "inverter1_0/A" "li_n305_n45#"
+merge "li_n305_n45#" "m1_n320_60#"
+merge "or_0/nor_0/A" "and_0/inverter1_0/Y" -503.396 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -80 0 0 0 0 0 0 0 0 0 0 0 0
+merge "and_0/inverter1_0/Y" "li_365_325#"
+merge "or_0/nor_0/B" "and_1/inverter1_0/Y" -148.666 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -80 0 0 0 0 0 0 0 0 0 0 0 0
+merge "and_1/inverter1_0/Y" "li_870_5#"
+merge "and_0/nand_0/VDD" "inverter1_0/w_n140_80#" -628.494 0 0 0 0 0 -260 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8000 -1160 0 0 0 0 0 0 0 0 0 0
+merge "inverter1_0/w_n140_80#" "m1_n230_245#"
+merge "m1_n230_245#" "m1_n425_245#"
+merge "m1_n425_245#" "and_1/nand_0/VDD"
+merge "and_1/nand_0/VDD" "or_0/nor_0/VDD"
+merge "or_0/nor_0/VDD" "m1_890_245#"
+merge "or_0/inverter1_0/Y" "Y" -78.0212 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2000 -180 0 0 0 0 0 0 0 0 0 0
+merge "and_0/nand_0/B" "D0" -100.668 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2500 -200 0 0 0 0 0 0 0 0 0 0
+merge "and_1/nand_0/B" "D1" -73.2296 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2500 -200 0 0 0 0 0 0 0 0 0 0
+merge "and_0/nand_0/A" "inverter1_0/Y" -165.245 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -20 -82 0 0 0 0 0 0 0 0 0 0 0 0
+merge "inverter1_0/Y" "li_n230_135#"

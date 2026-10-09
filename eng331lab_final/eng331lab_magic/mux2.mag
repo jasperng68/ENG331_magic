@@ -1,0 +1,56 @@
+magic
+tech sky130A
+timestamp 1791035449
+<< locali >>
+rect 365 355 1035 375
+rect 365 325 385 355
+rect -230 135 -150 155
+rect -305 -25 -285 65
+rect -170 45 -150 135
+rect -170 25 30 45
+rect 870 25 890 125
+rect 1015 95 1035 355
+rect 1015 75 1150 95
+rect 1225 25 1245 65
+rect 535 -25 555 15
+rect 870 5 1245 25
+rect -305 -45 555 -25
+<< metal1 >>
+rect -425 245 -405 325
+rect -230 245 -60 325
+rect 890 245 1060 325
+rect 1485 185 1535 225
+rect -425 125 -405 165
+rect -230 125 -60 165
+rect 890 125 1090 165
+rect -320 60 -270 110
+rect 25 10 75 60
+rect 90 10 140 60
+rect 520 10 570 60
+rect 585 10 635 60
+use and  and_0 ~/xschem_sky130/eng331lab_magic
+timestamp 1791035449
+transform 1 0 -5 0 1 70
+box -75 -60 420 280
+use and  and_1
+timestamp 1791035449
+transform 1 0 490 0 1 70
+box -75 -60 420 280
+use inverter1  inverter1_0 ~/xschem_sky130/eng331lab_magic
+timestamp 1791035449
+transform 1 0 -284 0 1 140
+box -140 -80 75 210
+use or  or_0 ~/xschem_sky130/eng331lab_magic
+timestamp 1791035449
+transform 1 0 1090 0 1 90
+box -50 -30 445 340
+<< labels >>
+rlabel metal1 545 10 545 10 5 S
+port 1 s
+rlabel metal1 610 10 610 10 5 D1
+port 2 s
+rlabel metal1 115 10 115 10 5 D0
+port 3 s
+rlabel metal1 1535 205 1535 205 3 Y
+port 4 e
+<< end >>

@@ -1,0 +1,19 @@
+* SPICE3 file created from or.ext - technology: sky130A
+
+.subckt inverter1 GND Y A w_n140_80#
+X0 Y A GND GND sky130_fd_pr__nfet_01v8 ad=0.225 pd=1.9 as=0.225 ps=1.9 w=0.5 l=0.15
+X1 Y A w_n140_80# w_n140_80# sky130_fd_pr__pfet_01v8 ad=0.36 pd=2.5 as=0.36 ps=2.5 w=0.8 l=0.15
+.ends
+
+.subckt nor VDD GND A B Y
+X0 a_5_80# a_n35_n100# VDD VDD sky130_fd_pr__pfet_01v8 ad=0.4 pd=2.1 as=0.72 ps=4.1 w=1.6 l=0.15
+X1 Y a_n35_n100# GND GND sky130_fd_pr__nfet_01v8 ad=0.125 pd=1 as=0.225 ps=1.9 w=0.5 l=0.15
+X2 GND a_30_n100# Y GND sky130_fd_pr__nfet_01v8 ad=0.225 pd=1.9 as=0.125 ps=1 w=0.5 l=0.15
+X3 Y a_30_n100# a_5_80# VDD sky130_fd_pr__pfet_01v8 ad=0.72 pd=4.1 as=0.4 ps=2.1 w=1.6 l=0.15
+.ends
+
+*.subckt or
+Xinverter1_0 SUB inverter1_0/Y nor_0/Y nor_0/VDD inverter1
+Xnor_0 nor_0/VDD SUB nor_0/A nor_0/B nor_0/Y nor
+*.ends
+

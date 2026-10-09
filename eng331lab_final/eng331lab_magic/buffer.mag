@@ -1,0 +1,29 @@
+magic
+tech sky130A
+timestamp 1790862414
+<< locali >>
+rect 200 5 220 105
+<< viali >>
+rect 200 105 220 125
+rect 200 -15 220 5
+<< metal1 >>
+rect -20 155 0 235
+rect 185 125 230 135
+rect 185 105 200 125
+rect 220 105 230 125
+rect 185 95 230 105
+rect 390 95 410 135
+rect -20 35 0 75
+rect 195 5 300 15
+rect 195 -15 200 5
+rect 220 -15 300 5
+rect 195 -25 300 -15
+use inverter1  inverter1_0
+timestamp 1790862177
+transform 1 0 120 0 1 50
+box -140 -80 75 210
+use inverter1  inverter1_1
+timestamp 1790862177
+transform 1 0 335 0 1 50
+box -140 -80 75 210
+<< end >>
